@@ -1,6 +1,8 @@
+import { ViewCounter } from "@/components/view-counter"
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black flex items-center justify-center p-4">
+    <main className="min-h-screen bg-black flex flex-col items-center justify-center p-4 gap-6">
       <div className="w-full max-w-4xl">
         <video
           className="w-full rounded-lg shadow-2xl"
@@ -17,6 +19,7 @@ export default function Home() {
           Your browser does not support the video tag.
         </video>
       </div>
+      <ViewCounter />
     </main>
   )
 }
